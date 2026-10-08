@@ -3,29 +3,34 @@
 ## Checklist
 
 - [ ] 区分 chatbot、workflow、agent、multi-agent
-- [ ] 理解 agent 的基本循环：observe -> think -> act -> observe
+- [x] 理解 agent 的基本循环：observe -> think -> act -> observe
 - [ ] 明白什么时候不该用 agent：任务可预测、流程稳定、普通脚本能解决时，agent 反而增加不确定性
-- [ ] 读完 [Anthropic: Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
-- [ ] 读完 [OpenAI: A practical guide to building agents](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
+- [ ] 读完 Anthropic: Building effective agents
+- [ ] 读完 OpenAI: A practical guide to building agents
 
-## 阅读笔记
+## 核心要点
 
-### Anthropic: Building effective agents
+### Hello-Agents：Chapter1（初识智能体）
+1. Agent 循环是**感知 -> 思考 -> 行动 -> 再感知**，适用于传统 agent（规则匹配、搜索算法、贝叶斯推断）和现代 LLM agent。
+2. React 是实现 Agent 循环的具体工程范式，**思考(Thought) -> 行动(Action) -> 观察(Observation)** ，其中“思考”由 LLM 完成，“行动”是由 LLM 输出的格式化工具调用，“观察”作为工具调用结果反馈给下一轮循环。
+
+### Hello-Agents：Chapter2
+
+（待学）
+
+### Anthropic：Building effective agents
 
 （待读）
 
-### OpenAI: A practical guide to building agents
+### OpenAI：A practical guide to building agents
 
 （待读）
 
 ## 概念辨析
-
-> 用自己的话回答，不抄原文。
-
-- chatbot 是什么：
-- workflow 是什么：
-- agent 是什么：
-- multi-agent 是什么：
+- chatbot 是什么？
+- workflow 是什么？
+- agent 是什么？
+- multi-agent 是什么？
 
 ## 阶段产出：我的场景为什么需要 agent，而不是普通 workflow？
 
