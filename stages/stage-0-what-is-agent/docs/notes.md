@@ -13,6 +13,13 @@
 ### Hello-Agents：Chapter1（初识智能体）
 1. Agent 循环是**感知 -> 思考 -> 行动 -> 再感知**，适用于传统 agent（规则匹配、搜索算法、贝叶斯推断）和现代 LLM agent。
 2. React 是实现 Agent 循环的具体工程范式，**思考(Thought) -> 行动(Action) -> 观察(Observation)** ，其中“思考”由 LLM 完成，“行动”是由 LLM 输出的格式化工具调用，“观察”作为工具调用结果反馈给下一轮循环。
+```python
+    while(flag < n) {
+        thought = llm.generate(system_prompt, history, available_tools) 
+        observation = available_tools[thought.tool_name](**kwarg)
+        history.append(observation)
+    }
+```
 
 ### Hello-Agents：Chapter2
 
